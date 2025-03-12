@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.background{
+    background: #ffffff;
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+/* NAVBAR */
+.navbar{
+    height: 60px;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background:#d6dae2;
+    box-shadow: 0 0 5px grey;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    margin: 5px 20px;
+}
+
+.navbar img{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.line{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.line li{
+    transition: transform 0.3s;
+    padding: 5px;
+}.line li:hover{
+    transform: scale(1.1);
+}
+.line a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}.line a:hover{
+    color: #3a8cde;
+}
+
+/* SIDE BAR */
+
+.sidebar{
+    position: fixed;
+    left: 0;
+    background:#d6dae2;
+    box-shadow:  0 0 5px grey;
+    height:89vh;
+    width:20%;
+    z-index: 0;
+    padding: 10px;
+    overflow: auto;
+}.sidebar::-webkit-scrollbar{
+    width:5px;
+}.sidebar::-webkit-scrollbar-thumb{
+    background: #9a9faa;
+}
+
+.sidebar h3{
+    margin: 5px;
+}
+.sidebar ul{
+    padding: 15px 5px;
+}
+.sidebar li{
+    list-style: none;
+    margin: 15px 0;
+    transition: transform 0.3s ease;
+}.sidebar li:hover{
+    transform: scale(1.1);
+}
+
+.sidebar a{
+    color: black;
+    background: #bcbec5c4;
+    text-decoration: none;
+    padding: 5px;
+    margin: 50px 0;
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+
+/* SAMPLE BOX */
+.samplebox{
+    display: grid;
+    width: 75%;
+    margin: 2.5%;
+}
+
+/* BOX */
+section div{
+    width: 75px;
+    height: 75px;
+    aspect-ratio: 1/1;
+    margin: 2px;
+    padding: 15px;
+    border: 2px solid #0073ff;
+    border-radius: 5px;
+    text-align: center;
+    background: #5dd3f7;
+}
+
+/* SECTOR */
+.sector1{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /*DISPLAY FLEX EXAMPLE*/
+    display: flex;
+}
+
+.sector2{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /* DISPLAY ADD FLEX-DIRECTION EXAMPLE */
+   display: flex;
+   flex-direction:column;/*add*/
+}
+
+.sector3{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /* DISPLAY ADD FLEX-DIRECTION EXAMPLE */
+   display: flex;
+   /* flex-direction:column; */
+   flex-direction: row;/*added with no changes or default*/
+}
+
+.sector4{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /* DISPLAY ADD FLEX-DIRECTION EXAMPLE */
+   display: flex;
+   /* flex-direction:column; */
+   /* flex-direction: row; */
+   justify-content: flex-end; /*added*/
+}
+
+.sector5{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /* DISPLAY ADD FLEX-DIRECTION EXAMPLE */
+   display: flex;
+   /* flex-direction:column; */
+   /* flex-direction: row; */
+   /* justify-content: flex-end; */
+   justify-content: flex-start; /*added*/
+}
+
+.sector6{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /* DISPLAY ADD FLEX-DIRECTION EXAMPLE */
+   display: flex;
+   /* flex-direction:column; */
+   /* flex-direction: row; */
+   /* justify-content: flex-end; */
+   /* justify-content: flex-start; */
+   justify-content: center; /*added*/
+}
+
+.sector7{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /* DISPLAY ADD FLEX-DIRECTION EXAMPLE */
+   display: flex;
+   /* flex-direction:column; */
+   /* flex-direction: row; */
+   /* justify-content: flex-end; */
+   /* justify-content: flex-start; */
+   /* justify-content: center; */
+   justify-content: space-between; /*added*/
+}
+
+.sector8{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /* DISPLAY ADD FLEX-DIRECTION EXAMPLE */
+   display: flex;
+   /* flex-direction:column; */
+   /* flex-direction: row; */
+   /* justify-content: flex-end; */
+   /* justify-content: flex-start; */
+   /* justify-content: center; */
+   justify-content: space-around; /*added*/
+}
+
+.sector9{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /* DISPLAY ADD FLEX-DIRECTION EXAMPLE */
+   display: flex;
+   /* flex-direction:column; */
+   /* flex-direction: row; */
+   /* justify-content: flex-end; */
+   /* justify-content: flex-start; */
+   /* justify-content: center; */
+   /* justify-content: space-around; */
+   justify-content: space-evenly;/*added*/
+}
+
+.sector10{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /* DISPLAY ADD FLEX-DIRECTION EXAMPLE */
+   display: flex;
+   /* flex-direction:column; */
+   /* flex-direction: row; */
+   /* justify-content: flex-end; */
+   /* justify-content: flex-start; */
+   /* justify-content: center; */
+   /* justify-content: space-around; */
+   /* justify-content: space-evenly;added */
+   align-items: start;
+}
+
+.sector11{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /* DISPLAY ADD FLEX-DIRECTION EXAMPLE */
+   display: flex;
+   /* flex-direction:column; */
+   /* flex-direction: row; */
+   /* justify-content: flex-end; */
+   /* justify-content: flex-start; */
+   /* justify-content: center; */
+   /* justify-content: space-around; */
+   /* justify-content: space-evenly;added */
+   align-items: center;
+}
+
+.sector12{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /* DISPLAY ADD FLEX-DIRECTION EXAMPLE */
+   display: flex;
+   /* flex-direction:column; */
+   /* flex-direction: row; */
+   /* justify-content: flex-end; */
+   /* justify-content: flex-start; */
+   /* justify-content: center; */
+   /* justify-content: space-around; */
+   /* justify-content: space-evenly;added */
+   align-items: end;
+}
+
+.sector13{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /* DISPLAY ADD FLEX-DIRECTION EXAMPLE */
+   display: flex;
+   /* flex-direction:column; */
+   /* flex-direction: row; */
+   /* justify-content: flex-end; */
+   /* justify-content: flex-start; */
+   /* justify-content: center; */
+   /* justify-content: space-around; */
+   /* justify-content: space-evenly;added */
+   /* align-items: end; */
+   flex-wrap: wrap;
+}
+
+.sector14{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /* DISPLAY ADD FLEX-DIRECTION EXAMPLE */
+   display: flex;
+   /* flex-direction:column; */
+   /* flex-direction: row; */
+   /* justify-content: flex-end; */
+   /* justify-content: flex-start; */
+   /* justify-content: center; */
+   /* justify-content: space-around; */
+   /* justify-content: space-evenly;added */
+   /* align-items: end; */
+   flex-wrap: wrap-reverse;
+}
+
+
+.sector15{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /* DISPLAY ADD FLEX-DIRECTION EXAMPLE */
+   display: flex;
+   /* flex-direction:column; */
+   /* flex-direction: row; */
+   /* justify-content: flex-end; */
+   /* justify-content: flex-start; */
+   /* justify-content: center; */
+   /* justify-content: space-around; */
+   /* justify-content: space-evenly;added */
+   /* align-items: end; */
+   flex-wrap: wrap;
+   align-content: center;
+}
+
+.sector16{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /* DISPLAY ADD FLEX-DIRECTION EXAMPLE */
+   display: flex;
+   /* flex-direction:column; */
+   /* flex-direction: row; */
+   /* justify-content: flex-end; */
+   /* justify-content: flex-start; */
+   /* justify-content: center; */
+   /* justify-content: space-around; */
+   /* justify-content: space-evenly;added */
+   /* align-items: end; */
+   /* flex-wrap: wrap; */
+   gap: 10px;/*try change the 10px (property) to bigger number*/
+
+}
+.sector17{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /* DISPLAY ADD FLEX-DIRECTION EXAMPLE */
+   display: flex;
+   /* flex-direction:column; */
+   /* flex-direction: row; */
+   /* justify-content: flex-end; */
+   /* justify-content: flex-start; */
+   /* justify-content: center; */
+   /* justify-content: space-around; */
+   /* justify-content: space-evenly;added */
+   /* align-items: end; */
+   /* flex-wrap: wrap; */
+   /* gap: 10px; */
+   /* flex-shrink: flex-end; */
+}.sector17 div:nth-child(1){/* try to change the number 1 to 6 apply */
+    flex-grow: 1; /*we add this to our box*/
+}
+
+.sector18{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /* DISPLAY ADD FLEX-DIRECTION EXAMPLE */
+   display: flex;
+   /* flex-direction:column; */
+   /* flex-direction: row; */
+   /* justify-content: flex-end; */
+   /* justify-content: flex-start; */
+   /* justify-content: center; */
+   /* justify-content: space-around; */
+   /* justify-content: space-evenly;added */
+   /* align-items: end; */
+   /* flex-wrap: wrap; */
+   /* gap: 10px; */
+   flex-shrink: flex-end;
+}
+
+
+.sector19{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /* DISPLAY ADD FLEX-DIRECTION EXAMPLE */
+   display: flex;
+   /* flex-direction:column; */
+   /* flex-direction: row; */
+   /* justify-content: flex-end; */
+   /* justify-content: flex-start; */
+   /* justify-content: center; */
+   /* justify-content: space-around; */
+   /* justify-content: space-evenly;added */
+   /* align-items: end; */
+   /* flex-wrap: wrap; */
+   /* gap: 10px; */
+   /* flex-shrink: flex-end; */
+}.sector19 div:nth-child(1){/* try to change the number 1 to 6 apply */
+    /* flex-grow: 1; */
+    flex-basis: 300px; /* this is the example*/
+    flex-direction: column; /*simply adding new element*/
+}
+
+.sector20{
+    background: #bcbec5c4;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+
+    /* DISPLAY ADD FLEX-DIRECTION EXAMPLE */
+   display: flex;
+   /* flex-direction:column; */
+   /* flex-direction: row; */
+   /* justify-content: flex-end; */
+   /* justify-content: flex-start; */
+   /* justify-content: center; */
+   /* justify-content: space-around; */
+   /* justify-content: space-evenly;added */
+   /* align-items: end; */
+   /* flex-wrap: wrap; */
+   /* gap: 10px; */
+   /* flex-shrink: flex-end; */
+   /* flex-basis: baseline; */
+}.sector20 div:nth-child(2){/* try to change the number 1 to 6 apply */
+    /* flex-grow: 1; */
+    /* flex-basis: 300px;*/
+    /* flex-direction: column; */
+    align-self: flex-end;
+}

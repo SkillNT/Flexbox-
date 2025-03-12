@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="background">
+        <div class="navbar">
+            <ul>
+                <img src="flex.png" alt="flexlogo">
+                <h2 class="title">FLEXBOX</h2>
+            </ul>
+
+            <ul class="line">
+                <li><a href="#">ABOUT ME</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="sidebar" hid>
+            <h3>Flexbox Elements</h3>
+            <h5>following lesson:</h5>
+            <ul hid>
+                <button></button>
+                <li><a href="#">display</a></li>
+                <li><a href="#">flex-direction</a></li>
+                <li><a href="#">justify-content</a></li>
+                <li><a href="#">align-items</a></li>
+                <li><a href="#">flex-wrap</a></li>
+                <li><a href="#">align-content</a></li>
+                <li><a href="#">gap</a></li>
+                <li><a href="#">flex-grow</a></li>
+                <li><a href="#">flex-shrink</a></li>
+                <li><a href="#">flex-basis</a></li>
+                <li><a href="#">align-self</a></li>
+                <li><a href="#">...</a></li>
+
+            </ul>
+        </div>
+
+            <ul class="samplebox">
+                <br>Example of display flex.<br>
+                <br>
+
+                <hr>
+                display: flex;
+                <section class="sector1">
+                    <div>Box 1</div>
+                    <div>Box 2</div>
+                    <div>Box 3</div>
+                </section>
+                You see we use the properties of flex and the boxes is in horizontally.
+                <br><br><br>
+                
+                <hr>
+                flex-direction: column;
+                <section class="sector2">
+                    <div>Box 1</div>
+                    <div>Box 2</div>
+                    <div>Box 3</div>
+                </section>
+                By adding this properties, we have our boxes displayed vertically.
+                <br><br><br>
+
+                <hr>
+                flex-direction: row;
+                <section class="sector3">
+                    <div>Box 1</div>
+                    <div>Box 2</div>
+                    <div>Box 3</div>
+                </section>
+                By adding this propety to an element flex-direction, we have our boxes displayed horizontally and it also shows as a default.
+                <br><br><br>
+
+                <hr>
+                justify-content: flex-end;
+                <section class="sector4">
+                    <div>Box 1</div>
+                    <div>Box 2</div>
+                    <div>Box 3</div>
+                </section>
+                You see here, our boxes has been move to the right because we set the property to flex to end.
+              <br><br><br>
+
+              <hr>
+              justify-content: flex-start;
+              <section class="sector5">
+                  <div>Box 1</div>
+                  <div>Box 2</div>
+                  <div>Box 3</div>
+              </section>
+              In other side, flex-start move boxes in the left side or from the word itself the start.
+            <br><br><br>
+
+            <hr>
+            justify-content: center;
+            <section class="sector6">
+                <div>Box 1</div>
+                <div>Box 2</div>
+                <div>Box 3</div>
+            </section>
+            it moves all boxes or content to center.
+          <br><br><br>
+
+          <hr>
+          justify-content: space-between;
+          <section class="sector7">
+              <div>Box 1</div>
+              <div>Box 2</div>
+              <div>Box 3</div>
+          </section>
+          it will evenly distribute the boxes without gap space left.
+        <br><br><br>
+
+        <hr>
+        justify-content: space-arround;
+        <section class="sector8">
+            <div>Box 1</div>
+            <div>Box 2</div>
+            <div>Box 3</div>
+        </section>
+        Space arround will evenly distribute the boxes with gap spacing.
+      <br><br><br>
+
+      <hr>
+      justify-content: space-evenly;
+      <section class="sector9">
+          <div>Box 1</div>
+          <div>Box 2</div>
+          <div>Box 3</div>
+      </section>
+      Space evenly will evenly distribute the boxes with equal gap spacing.
+    <br><br><br>
+
+    
+    <hr>
+    align-items: start;
+    <section class="sector10">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+    </section>
+    it will move the boxes at the cross start axis. 
+    we can also use the property of (flex-start, flex-end).
+  <br><br><br>
+
+  <hr>
+  align-items: center;
+  <section class="sector11">
+      <div>Box 1</div>
+      <div>Box 2</div>
+      <div>Box 3</div>
+  </section>
+  it will move the boxes at the cross center axis.
+<br><br><br>
+
+<hr>
+align-items: end;
+<section class="sector12">
+    <div>Box 1</div>
+    <div>Box 2</div>
+    <div>Box 3</div>
+</section>
+it will move the boxes at the cross end axis.
+<br><br><br>
+
+<hr>
+flex-wrap: wrap;
+<section class="sector13">
+    <div>Box 1</div>
+    <div>Box 2</div>
+    <div>Box 3</div>
+    <div>Box 4</div>
+    <div>Box 5</div>
+    <div>Box 6</div>
+
+</section>
+By simply adding flex wrap, it will wrap
+ and change the box position responsively 
+ if the content won't fit on window size.
+ (try to shrink your the web.)
+<br><br><br>
+
+<hr>
+flex-wrap: wrap-reverse;
+<section class="sector14">
+    <div>Box 1</div>
+    <div>Box 2</div>
+    <div>Box 3</div>
+    <div>Box 4</div>
+    <div>Box 5</div>
+    <div>Box 6</div>
+</section>
+By chaging wrap to reverse, 
+it will wrap end to flex-start of the content.
+<br><br><br>
+
+<hr>
+align-content: center; (start, center , end, space-arround, space-between, space-evenly).
+<section class="sector15">
+    <div>Box 1</div>
+    <div>Box 2</div>
+    <div>Box 3</div>
+    <div>Box 4</div>
+    <div>Box 5</div>
+    <div>Box 6</div>
+</section>
+Align content only it works if you use the element flex-wrap.
+its properties are the same to the justify-content so just look back
+to our lesson justify-content.
+<br><br><br>
+
+<hr>
+gap: 10px;
+<section class="sector16">
+    <div>Box 1</div>
+    <div>Box 2</div>
+    <div>Box 3</div>
+    <div>Box 4</div>
+    <div>Box 5</div>
+    <div>Box 6</div>
+</section>
+gap element will make the box separate according to its properties.
+Try to change its properties to bigger number.(Use px, vh, dvh, etc.).
+<br><br><br>
+
+<hr>
+flex-grow: 1;
+<section class="sector17">
+    <div>Box 1</div>
+    <div>Box 2</div>
+    <div>Box 3</div>
+    <div>Box 4</div>
+    <div>Box 5</div>
+    <div>Box 6</div>
+</section>
+flex-grow occupy the second area of the box according to its property.
+<br><br><br>
+
+<hr>
+flex-shrink: flex-end;
+<section class="sector18">
+    <div>Box 1</div>
+    <div>Box 2</div>
+    <div>Box 3</div>
+    <div>Box 4</div>
+    <div>Box 5</div>
+    <div>Box 6</div>
+</section>
+we can use display:flex; for its default, but we use flex-shrink if 
+it is necessary.Now if we shrink our web tab it will shrink according
+ to its property to shrink to the end first.
+<br><br><br>
+
+<hr>
+flex-basis: 300px;
+<section class="sector19">
+    <div>Box 1</div>
+    <div>Box 2</div>
+    <div>Box 3</div>
+    <div>Box 4</div>
+    <div>Box 5</div>
+    <div>Box 6</div>
+</section>
+By customize the box through this property we can scale it 
+using px, vh, rem, etc.an like flex-grow only follow to the ordered box scale.
+<br><br><br>
+
+<hr>
+align-self: flex-center; (use flex-start, flex-end, or center)
+<section class="sector20">
+    <div>Box 1</div>
+    <div>Box 2</div>
+    <div>Box 3</div>
+    <div>Box 4</div>
+    <div>Box 5</div>
+    <div>Box 6</div>
+</section>
+align-self will simply align the box that you
+ have select to move or change different position.
+ In this example i select the box 2 to align item to end.
+<br><br><br>
+
+
+            </ul>
+    </main>
+</body>
+</html>
